@@ -1,12 +1,21 @@
 import './App.css';
-import ''
+import RenderNav from './Components/Nav/NavContainer';
+import HeroContainer from './Components/Hero/HeroContainer';
+import Introduction from './Components/Introduction';
+import SkillsContainer from './Components/Skills/SkillsContainer';
+import ProjectsContainer from './Components/Projects/ProjectsContainer';
+import Contact from './Components/Contact/Contact';
+
 
 function App() {
   return (
-    <div className="App">
-      <nav class="navbar navbar-expand-sm align-middle justify-content-end">
-        
-      </nav>
+    <div className="w-full">
+      <RenderNav />
+      <HeroContainer />
+      <Introduction />
+      <SkillsContainer />
+      <ProjectsContainer />
+      <Contact />
     </div>
   );
 }
