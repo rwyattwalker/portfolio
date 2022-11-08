@@ -13,7 +13,9 @@
     "react-icons": "^4.6.0",
     "react-scripts": "^5.0.1",
     "tailwind-scrollbar-hide": "^1.1.7",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
   },
   "scripts": {
     "start": "react-scripts start",
