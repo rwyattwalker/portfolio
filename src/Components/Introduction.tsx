@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Introduction() {
+function Introduction():JSX.Element {
   return (
     <div className='flex flex-col bg-light-background text-[#fff] pb-8'>
      <div className="mt-4 text-center p-4">

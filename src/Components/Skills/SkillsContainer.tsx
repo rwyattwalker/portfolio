@@ -2,7 +2,7 @@ import React from 'react'
 import SkillsColumn from './SkillsColumn'
 import {FaPencilRuler, FaCode, FaDatabase, FaHandshake } from 'react-icons/fa'
 
-const SkillsContainer = () => {
+const SkillsContainer = ():JSX.Element => {
   const iconStyles = "text-light-background dark:text-dark-text-primary text-[#fff] text-3xl mx-auto"
   return (
     <div className='flex flex-wrap gap-0 justify-center dark:bg-dark-background'>
