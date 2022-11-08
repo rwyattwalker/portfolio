@@ -1,6 +1,11 @@
 import React from 'react'
-
-function Project({title, description, imgSrc, url}) {
+interface Props{
+    title: string,
+    description: string,
+    imgSrc:string,
+    url:string
+}
+function Project({title, description, imgSrc, url}:Props) {
   return (
     <div className= "flex justify-center pb-6 mx-1 my-2">
       <div className="content">
