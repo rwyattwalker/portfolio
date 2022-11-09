@@ -1,7 +1,7 @@
 import React from 'react'
 import Project from './Project'
 
-function ProjectsContainer() {
+function ProjectsContainer():JSX.Element {
   return (
    <div className="dark:bg-dark-background">
       <h2 className="mx-auto text-4xl dark:text-dark-text-primary">Recent Projects</h2>

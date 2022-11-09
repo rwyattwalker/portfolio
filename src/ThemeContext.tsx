@@ -1,6 +1,10 @@
 import React from 'react';
 import {useState, useEffect} from 'react'
 
+interface Props {
+    children?: JSX.Element,
+    initialTheme?: any
+}
 const getInitialTheme = () => {
     if (typeof window !== 'undefined' && window.localStorage) {
         const theme = window.localStorage.getItem('color-theme');
@@ -15,11 +19,11 @@ const getInitialTheme = () => {
    return 'light'
 };
 
-export const ThemeContext = React.createContext();
+export const ThemeContext = React.createContext(null);
 
-export const ThemeProvider = ({ initialTheme, children }) => {
+export const ThemeProvider = ({ initialTheme, children }: Props) => {
     const [theme, setTheme] = useState(getInitialTheme);
-    const handleSetTheme = (theme) => {
+    const handleSetTheme = (theme:string) => {
         const root = window.document.documentElement;
         const isDark = theme === 'dark';
         root.classList.remove(isDark ? 'light' : 'dark');

@@ -1,3 +1,4 @@
+import React from 'react'
 import './App.css';
 import RenderNav from './Components/Nav/NavContainer';
 import HeroContainer from './Components/Hero/HeroContainer';

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Contact() {
+function Contact():JSX.Element {
   return (
      <div className="dark:bg-dark-background dark:text-dark-text-primary" id="contact">
         <div className="">
