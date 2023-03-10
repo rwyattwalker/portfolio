@@ -20,7 +20,7 @@ const RenderHero = () => {
         </div>
         <div className="flex flex-col dark:bg-dark-backgroud">
             <div className="mt-4">
-              {theme == 'dark'
+              {theme === 'dark'
                 ? <img src="images/hero-dark.png" alt="hero-darkmode"  className="mx-auto d-block hero-img" />
                 : <img src="images/hero-light.png" alt="hero-lightmode"  className="mx-auto d-block hero-img" />
               }
